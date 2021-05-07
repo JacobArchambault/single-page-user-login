@@ -1,0 +1,24 @@
+          
+            <h4>Edit User Preference</h4>
+            
+            <div class="form-group">
+                username:
+                <input type="text" class="form-control"  ng-model="username" >
+           </div>
+		   <div class="form-group">
+                preference:
+                <input type="text" class="form-control"  ng-model="preference" >
+           </div>
+			<div class="form-group">
+                New Preference: <select ng-model='flavor'>
+				<option value='chocolate'>Chocolate</option>
+				<option value='strawberry'>Strawberry</option>
+				<option value='vanilla'>Vanilla</option>
+				</select>
+           </div>
+           
+           <button type="button" class="btn btn-primary" ng-click="updateFlavor()"> Update </button>  
+           <br><br>
+		   {{status}} <!-- place to print status  -->
+		<br><br>
+
